@@ -1,6 +1,6 @@
-import MyBackgroundComponent from "../src/components/backgroundComponent";
+import LandingPage from "../src/components/landingPage/LandingPage";
 export default function Home() {
   return (
-          <MyBackgroundComponent />
+          <LandingPage />
   );  
 }
