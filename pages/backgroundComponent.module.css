@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "AlphaClouds";
+    src: url('/fonts/AlphaClouds.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cotton Cloud";
+    src: url('/fonts/Cotton Cloud.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CoffeCake";
+    src: url('/fonts/CoffeCake.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Comfy Feeling";
+    src: url('/fonts/Comfy Feeling.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.background {
+    background-image: url('/dreamscape.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.backgroundSquare {
+    width: 40%;
+    height: 35vh; 
+    background-color: rgba(254, 253, 250, 0.5); 
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    border-radius: 12px; 
+    transition: height 1.5s ease, width 1.5s ease; /* Smooth expansion */
+}
+/* backgroundComponent.module.css */
+
+.shrink {
+    width: 40%; /* Original width */
+    height: 35vh; /* Original height */
+    transition: width 0.5s ease, height 0.5s ease; /* Smooth transition for shrinking */
+}
+
+.expandedLoginSignup {
+    width: 50%; /* Width for Login/Signup */
+    height: 45vh; /* Height for Login/Signup */
+}
+
+.expandedDashboard {
+    width: 70%; /* Width for Dashboard */
+    height: 60vh; /* Height for Dashboard */
+}
+
+.backgroundSquare.expanded {
+    height: 60vh; /* Expanded height */
+    width: 50%; /* Expanded width */
+}
+
+.large {
+    width: 60%; /* Adjust the width as needed */
+    height: 70vh; /* Adjust the height as needed */
+    transition: width 0.5s ease, height 0.5s ease; /* Smooth transition */
+  }
+
+.backgroundSquare.shrink {
+    height: 35vh; /* Shrink to original height */
+    width: 40%; /* Shrink to original width */
+    transition: height 0.5s ease, width 0.5s ease; /* Smooth transition for shrink */
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px; /* Add some space above the form */
+    opacity: 0; /* Start hidden */
+    transform: translateY(-20px); /* Start slightly above */
+    transition: opacity 1.5s ease, transform 1.5s ease; /* Smooth transition for opacity and position */
+}
+
+.loginForm.show {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+}
+
+.landingPageTitle {
+    color: #8e99f3; /* Soft pastel blue */
+    font-size: 4rem; 
+    text-align: center; 
+    font-family: "Cotton Cloud", sans-serif;
+    margin: 0px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); 
+    font-weight: 500; /* Add soft shadow for a dreamy effect */
+}
+
+.landingPageSubTitle {
+    color: #8d7bde; /* Soft lavender */
+    font-size: 1.5rem; 
+    text-align: center; 
+    font-family: "Comfy Feeling", sans-serif;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Soft shadow for coherence */
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 15px; /* Increased space between buttons */
+    justify-content: center; 
+    margin-top: 20px; 
+}
+  
+.landingPageButton {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #c9c9ff, #d1d1f9); /* Soft gradient background */
+    border-radius: 12px; 
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); 
+    font-family: "Comfy Feeling", sans-serif;
+    cursor: pointer;
+    transition: background 0.5s ease, color 0.5s ease; /* Smooth transition for background and text color */
+    border: none; /* Remove border */
+    outline: none; /* Remove focus outline */
+    color: #5f5c8a; /* Soft grayish-blue for the text */
+    animation: none; /* No animation by default */
+}
+
+.landingPageButton:hover {
+    background: linear-gradient(135deg, #d5d0ff, #e1e0ff); /* Slightly lighter gradient on hover */
+    animation: pulsate 2s infinite; /* Add pulsate animation on hover */
+}
+
+.landingPageButton:active {
+    background: #4f4b9a; /* Darker gradient on active */
+}
+
+.landingPageButton:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(139, 139, 255, 0.5); /* Add a custom focus effect */
+}
+
+/* Keyframes for pulsating effect */
+@keyframes pulsate {
+    0%, 100% {
+        transform: scale(1); /* Initial scale */
+        color: #5f5c8a; /* Soft grayish-blue text color */
+    }
+    50% {
+        transform: scale(1.1); /* Scale up slightly */
+        color: #8e99f3; /* Lighter blue on mid-pulse */
+    }
+}
+
+.formDesign {
+    font-family: "Comfy Feeling", sans-serif;
+}
+

@@ -1,0 +1,17 @@
+.calendarContainer {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 60vh;           /* Adjust this height as needed */
+    width: 100%;             /* Full width for the container */
+}
+
+.fc {
+    width: 1200px;          /* Set a fixed width for the calendar (adjust as needed) */
+    max-width: 100%;        /* Prevent overflow beyond the container */
+}
+
+.fc-daygrid-event {
+    background-color: #378006; /* Optional: Customize event styles */
+    border: none; /* Optional: Customize border styles */
+}
