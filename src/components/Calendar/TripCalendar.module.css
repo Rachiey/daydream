@@ -1,17 +1,21 @@
 .calendarContainer {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;     /* Center vertically */
-    height: 60vh;           /* Adjust this height as needed */
-    width: 100%;             /* Full width for the container */
+    position: fixed;
+    height: 65%;
+    width: 60%;
+    padding: 10px;
 }
 
-.fc {
-    width: 1200px;          /* Set a fixed width for the calendar (adjust as needed) */
-    max-width: 100%;        /* Prevent overflow beyond the container */
+.tripCalendar {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
 }
 
-.fc-daygrid-event {
-    background-color: #378006; /* Optional: Customize event styles */
-    border: none; /* Optional: Customize border styles */
+.calendarContainer {
+    flex: 1; /* Allow it to grow */
+    min-height: 80vh; /* Minimum height */
+    padding: 10px;
+    overflow: auto; /* Allow scrolling if needed */
 }

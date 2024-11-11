@@ -35,6 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: center; 
+    width: 100%;
 }
 
 .backgroundSquare {
@@ -174,3 +175,42 @@
     font-family: "Comfy Feeling", sans-serif;
 }
 
+.calendarTitle{
+    color: rgb(115, 59, 180);
+    font-family: "Comfy Feeling", sans-serif;
+    font-size: 2rem;
+}
+
+.container {
+    display: flex; /* Use flexbox to manage layout */
+    width: 62%; /* Allow the container to take full width */
+    height: 90%; /* Ensure it takes full height of the parent */
+    padding: 20px; /* Optional padding */
+    background-color: rgba(254, 253, 250, 0.5); 
+    border-radius: 8px; /* Optional rounded corners */
+}
+
+  .sidebarContainer {
+    position: absolute; /* Use absolute positioning */
+    bottom: 20px; /* Align it at the bottom */
+    left: 20px; /* Align it to the left */
+    display: flex; /* Use flex to arrange children horizontally */
+    flex-direction: column; /* Stack children vertically */
+    gap: 10px; /* Space between the event widget and the back button */
+  }
+  
+  .backButton {
+    position: relative; /* Reset position to relative for normal flow */
+    padding: 10px 20px; /* Add some padding for better appearance */
+    background-color: #0070f3; /* Example background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 16px; /* Font size */
+  }
+  
+  .backButton:hover {
+    background-color: #005bb5; /* Darker shade on hover */
+  }
+  
